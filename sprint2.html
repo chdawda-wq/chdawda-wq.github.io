@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sprint 2 - My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="logo">My Portfolio</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Dashboard</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="manifesto.html">Manifesto</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <main class="main-content">
+    <section class="sprint-page">
+        <h1>Sprint 2: Design for Understanding</h1>
+        <a href="https://medium.com/@wexu_40391/362bbecf798f">Click here to view full post</a>
+        <img src="images/sprint2_1.webp" alt="Sprint 2 Banner" class="sprint-banner">
+        <p>In an age defined by data, the ability to effectively interpret and communicate information is important. Data visualization is the practice dedicated to this purpose, transforming abstract numbers and complex relationships into intuitive visual representations. By creating a visual context of data, it closes the gap between raw information and human understanding, enabling us to perceive patterns, trends, and outliers that would otherwise remain hidden in spreadsheets. This project demonstrates the power of this tool by applying it to a subject known to almost everyone: coffee.</p>
+        <p>Behind every cup of coffee lies a complex web of data, detailing origin, variety, processing methods, and sensory attributes. Data visualization serves as a critical tool, transforming these dimensions into clear, intuitive, and actionable insights. It allows us to move beyond personal experience and understand the broader patterns that drive the entire industry.</p>
+        
+        <h4>Project Context</h4>
+        <p>For this project, we applied the CORGIS coffee dataset to explore this interesting topic. Our goal was to create visualizations that are both analytical, revealing the key driving factors of coffee quality through clear and unbiased data exploration, and persuasive, delivering a compelling narrative to engage the audience. We employed the Five Design Sheet (Fds) methodology to systematically design and refine our approach, ensuring our final visualizations are both informative and impactful.</p>
+        
+        <h4>About the Coffee Data</h4>
+        <p>Our analysis is built on a comprehensive dataset from CORGIS, which provides detailed metrics on numerous coffee species. The data includes objective measurements such as country of origin, altitude, and bean variety, as well as subjective sensory scores for attributes like aroma, flavor, aftertaste, and body.</p>
+        <p>This dataset offers a unique opportunity to answer critical questions: what chemical properties correlate with a higher quality score? How does a coffee’s origin influence its overall performance? By making these relationships visible, we can empower customers, coffee makers, and growers with a deeper, data-driven understanding of this amazing beverage in their cup.</p>
+        
+        <h4>Ideation for Analysis Visualization</h4>
+        <p><b>Design Sheet 1: Ideation</b></p>
+
+        <p><b>Description: </b>This visualization helps us to brainstorm all the ideations relevant to our project. We put all types of visualizations we could come up with: parallel coordinate graph, scatterplot, bubble chart, map, and line graph. We want to explore and reveal information about the coffee flavors, coffee growth altitude, origin countries, year changes, and overall coffee performance inferred from the coffee cup points. We also considered the possibilities of combining these ideas to make more comprehensive visualizations.</p>
+        <p><b>Key Points: </b></p>
+        <ul>
+            <li><b>Parallel coordinate graph: </b>with each line representing a single country, this graph reveals how country origin varies the subjective grading of the coffee taste and performance.</li>
+            <li><b>Scatterplot: </b>with the y-axis representing the altitude and x-axis representing the total cup points, this graph reveals the correlation between the coffee performance and its growth altitude.</li>
+            <li><b>Bubble chart: </b>with the bubble size representing the production weights, y-axis as the average weights, and x-axis as the number of bags produced, this chart reveals the general amount of coffee produced by countries. It also indicates the top coffee production countries.</li>
+            <li><b>Map: </b>color-coded country map that reveals the total cup points for each reported country.</li>
+            <li><b>Line Graph: </b>with y-axis as the bags of coffee produced and x-axis as the time, this reveals the change in annual production of coffee.</li>
+        </ul>
+
+        <p><b>Design Sheet 2: Country Origin based Visualization</b></p>
+        <p><b>Description: </b>the task we want to accomplish is to compare overall coffee performance (total cup points) to country origins. We had two top choices for this visualization, either the map representation or the parallel coordinate graph. For the map, the users can hover over the country to see detailed data and filter the specific performance aspect they want the map to display. For the parallel coordinate graph, the users can view the changes and, by hovering over the line, see the corresponding countries.</p>
+        <p><b>Discussion: </b>For the map, we all agreed that it has the advantage of being appealing to the audience, and it provides a convenient function for the audience to navigate between different types of scores. However, the dataset does not provide all countries, so the map would be empty, having only a few countries that are coded with data. For the parallel coordinate graph, the users can easily see the breakdown of the categories and view the trends across different categories. It was suggested that it would be more clear if the lines were colored differently.</p>
+
+        <p><b>Design Sheet 3: Altitude and Coffee Performance Visualization</b></p>
+        <p><b>Description: </b>The task we want to accomplish is to compare the altitude to the total cup points. We chose to use a scatterplot to show the relationship between altitude and the coffee performance, revealing the trend. The users can see the visualization, and by hovering over each point, they can see the corresponding country, actual growth altitude, and cup points.</p>
+        <p><b>Discussion: </b>this choice of visualization is very helpful to convey information about a trend. We agreed that it would be helpful to also include a function that gives the line of best fit, and to include more interactive features, such as sliding bars for time or categorizing entries.</p>
+
+        <p><b>Design Sheet 4: Quantities of Coffee Production by Country Origin Visualization</b></p>
+        <p><b>Description: </b>The task we want to accomplish is to compare quantities of coffee production. We chose the bubble chart and the line chart to convey information about coffee production weights. For the bubble chart, the users can choose what the bubble size represents (bag weights, etc.), and they can see which countries are producing the most amount of coffee. For the line graph, the users can see the trend in coffee production over time.</p>
+        <p><b>Discussion: </b> We thought that the bubble chart includes some bubbles that are too small in size, so we agreed that we should add the function that allows the users to hover over the bubbles to see more detailed information. For the line chart, we thought it lacks interactive features, and we considered adding more of those to the page.</p>
+
+        <p><b>Design Sheet 5: Final Realization</b></p>
+        <p><b>Description: </b>Our final visualization combined all the advantages of the visualizations we discussed before. For the parallel coordinate graph, we colored the country lines differently and added more entries in the x-axis to show more information. For the bubble chart, the users can hover over the small bubbles to see more information displayed. They can also adjust what they want the bubble sizes to represent. For the scatterplot, we considered coloring the points differently to make it more clear, and including a regression line to show trend.</p>
+        <p><b>Discussion: </b>This final revision gives a comprehensive and clear visualization to the audience. It reveals relationships between country origin and taste aspects; country origin and coffee production by weights and bags; coffee growth altitude and the corresponding total cup points. Users can interact with the graphs by hovering over or clicking on certain buttons.</p>
+
+        <a href="https://medium.com/@wexu_40391/362bbecf798f">Click here to view full post</a>
+    </section>
+  </main>
+</body>
+</html>
